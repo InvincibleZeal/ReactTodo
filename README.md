@@ -15,7 +15,7 @@ cd database
 yarn json:server
 ```
 
-* Use the app on:
+* Use the app at:
 > http://localhost:5000
 
 * View the data on JSON:server at:
@@ -39,7 +39,7 @@ cd database
 yarn json:server
 ```
 
-* Visit the app on:
+* Visit the app at:
 > http://localhost:3000
 
 * View the data on JSON:server at:
