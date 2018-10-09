@@ -1,0 +1,16 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "text": "Find the bugs."
+    },
+    {
+      "id": 2,
+      "text": "Add features to this react-app"
+    },
+    {
+      "id": 3,
+      "text": "Sleep more."
+    }
+  ]
+}

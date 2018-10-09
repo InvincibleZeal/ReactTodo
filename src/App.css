@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(./Montserrat-SemiBold.ttf);
+}
+
+
+.App {
+  width: 60%;
+  margin: 0 auto;
+  font-family: "Montserrat";
+  color: #222;
+  border: 1px solid #aaa;
+  min-height: 200px;
+  border-radius: 5px;
+}
+
+.App > h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+.TodoForm > form input {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+  height: 25px;
+  border: 2px solid #4390fe;
+  border-radius: 2px;
+}
+
+.TodoList {
+  list-style-type: none;
+  width: 60%;
+  margin: 20px auto;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 0;
+}
+
+.TodoList .list-item {
+  display: block;
+  padding: 10px 20px;
+  border-bottom: 1px solid #aaa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.TodoList .list-item span {
+  cursor: pointer;
+}
+
+.TodoList .list-item img{
+  cursor: pointer;
+  height: 15px;
+  margin-right: 10px;
+  transition: 100ms;
+}
+
+.TodoList .list-item img:hover {
+  height: 17px;
+  margin-right: 9px;
+}
+
+.TodoList .list-item form {
+  width: 70%;
+}
+
+.TodoList .list-item input {
+  padding: 0 10px;
+  width: 100%;
+  font-size: 15px;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}

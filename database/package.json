@@ -1,0 +1,13 @@
+{
+  "name": "database",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Ritesh Ganjewala",
+  "license": "MIT",
+  "scripts": {
+    "json:server": "json-server --port 4000 --watch data.json"
+  },
+  "dependencies": {
+    "json-server": "^0.14.0"
+  }
+}
