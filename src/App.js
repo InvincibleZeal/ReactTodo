@@ -15,7 +15,10 @@ class App extends Component {
       <div className="App">
         <h1>To Do List</h1>
         <TodoForm onTodoAdd={this.handleTodoAdd} />
-        <TodoList todos={this.state.todos} onTodoDelete={this.handleTodoDelete} onRefresh={this.getData} onTodoUpdate={this.handleTodoUpdate} />
+        <TodoList todos={this.state.todos}
+          onTodoDelete={this.handleTodoDelete}
+          onTodoUpdate={this.handleTodoUpdate}
+        />
       </div>
     );
   }
@@ -30,9 +33,9 @@ class App extends Component {
 
   handleTodoDelete = (id) => {
     this.deleteData(id);
-  } 
+  }
 
-  handleTodoUpdate  = (todo) => {    
+  handleTodoUpdate  = (todo) => {
     this.updateData(todo);
   }
 
@@ -53,7 +56,8 @@ class App extends Component {
     }
     axios.post('http://localhost:4000/todos', {
       id: id,
-      text
+      text,
+      completed: false
     }).then(() => this.getData());
   }
 

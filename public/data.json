@@ -14,11 +14,6 @@
       "id": 5,
       "text": "sleep more",
       "completed": false
-    },
-    {
-      "id": 6,
-      "text": "adding to it",
-      "completed": true
     }
   ]
 }

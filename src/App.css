@@ -20,13 +20,19 @@
   font-size: 2.5rem;
 }
 
-.TodoForm > form input {
+.TodoForm {
   width: 60%;
-  display: block;
   margin: 0 auto;
-  height: 25px;
+}
+.TodoForm > form input {
+  width: 100%;
+  height: 40px;
   border: 2px solid #4390fe;
   border-radius: 2px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  font-family: "Karla";
+  font-size: 16px;
 }
 
 .TodoList {
@@ -51,16 +57,23 @@
   cursor: pointer;
 }
 
+.TodoList .list-item span.completed {
+  text-decoration: line-through;
+}
+
+.TodoList .list-item .imgs {
+  display: flex;
+}
+
 .TodoList .list-item img{
   cursor: pointer;
-  height: 15px;
-  margin-right: 10px;
+  height: 20px;
+  margin-left: 5px;
   transition: 100ms;
 }
 
-.TodoList .list-item img:hover {
-  height: 17px;
-  margin-right: 9px;
+.TodoList .list-item .delete-img {
+  margin-left: 15px;
 }
 
 .TodoList .list-item form {
@@ -76,4 +89,22 @@
 
 .hidden {
   display: none;
+}
+
+@media (max-width: 1200px) {
+  .TodoList, .TodoForm{
+    width: 90%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .App {
+    width: 70%;
+  }
+}
+
+@media (max-width: 700px) {
+  .App {
+    width: 90%;
+  }
 }
