@@ -1,0 +1,19 @@
+{
+  "todos": [
+    {
+      "id": 2,
+      "text": "Add features to this react app",
+      "completed": false
+    },
+    {
+      "id": 4,
+      "text": "Find the bugs...ok?",
+      "completed": false
+    },
+    {
+      "id": 5,
+      "text": "sleep more",
+      "completed": false
+    }
+  ]
+}
