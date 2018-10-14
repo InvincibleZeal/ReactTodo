@@ -12,6 +12,7 @@ serve -s build
 * Spin up the JSON-server API:
 ```
 cd database
+yarn install
 yarn json:server
 ```
 
